@@ -69,43 +69,60 @@
         </main>
 
         <aside>
-            {{#person}}
-                {{#avatar}}
-                    <img src="{{.}}" class="avatar" />
-                {{/avatar}}
+            <section class="info">
+                {{#person}}
+                    {{#avatar}}
+                        <img src="{{.}}" class="avatar" />
+                    {{/avatar}}
 
-                <p class="summary">{{_ summary}}</p>       
+                    <p class="summary">{{_ summary}}</p>       
+
+                    <ul>
+                        {{#contact.email}}
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                {{_ .}}
+                            </li>
+                        {{/contact.email}}
+
+                        {{#contact.phone}}
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                {{_ .}}
+                            </li>
+                        {{/contact.phone}}
+
+                        {{#social.linkedIn}}
+                            <li>
+                                <i class="fab fa-linkedin"></i>
+                                {{ url (_ .) }}
+                            </li>
+                        {{/social.linkedIn}}
+
+                        {{#social.gitHub}}
+                            <li>
+                                <i class="fab fa-github"></i> 
+                                {{ url (_ .) }}
+                            </li>
+                        {{/social.gitHub}}
+                    </ul>
+                {{/person}}       
+            </section>     
+
+            <section class="languages timeline">
+                <h2>Languages</h2>
 
                 <ul>
-                    {{#contact.email}}
+                    {{#languages}}
                         <li>
-                            <i class="fas fa-envelope"></i>
-                            {{_ .}}
+                            <header>
+                                <p class="language">{{_ name}}</p>
+                                <p class="proficiency">{{_ proficiency}}</p>
+                            </header>
                         </li>
-                    {{/contact.email}}
-
-                    {{#contact.phone}}
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            {{_ .}}
-                        </li>
-                    {{/contact.phone}}
-
-                    {{#social.linkedIn}}
-                        <li>
-                            <i class="fab fa-linkedin"></i>
-                            {{ url (_ .) }}
-                        </li>
-                    {{/social.linkedIn}}
-
-                    {{#social.gitHub}}
-                        <li>
-                            <i class="fab fa-github"></i> 
-                            {{ url (_ .) }}
-                        </li>
-                    {{/social.gitHub}}
+                    {{/languages}}
                 </ul>
-                {{/person}}            
+            </section>
         </aside>
     </body>
 </html>
