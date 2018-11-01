@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab');
+
 @body-side-margins: 1cm;
 @sidebar-width: 30%;
 
 html {
     padding: 2cm 0;
     background: white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", serif;
+    font-weight: normal;
+    color: white;
 }
 
 ul {
@@ -36,7 +45,12 @@ body {
 
         h1 {
             margin: 0;
-        }        
+            color: inherit;
+        }       
+        
+        .subtitle {
+            margin: 0;
+        }
     }
 
     >main {
@@ -45,6 +59,20 @@ body {
         background-color: #574E53;
         grid-area: content;
         color: #C0C0C9;        
+
+        h2 {
+            position: relative;
+            overflow: hidden;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                margin-left: 0.5em;
+                border: 1px solid white;
+            }
+        }
     }
 
     >aside {
@@ -68,6 +96,11 @@ section.timeline {
         p {
             margin: 0;
             padding: 0;
+            
+            &:first-of-type {
+                color: white;
+                font-weight: bold;
+            }
         }
 
         .date {
@@ -79,7 +112,15 @@ section.timeline {
         }
     }
 
-    li {
-        margin: 1em 0;
+    ul {
+        margin-left: 1em;
+
+        li {
+            margin-bottom: 1em;
+    
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
     }
 }
