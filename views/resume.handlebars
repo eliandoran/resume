@@ -16,26 +16,38 @@
             <p class="summary">{{_ person.summary}}</p>            
         </main>
 
-        <aside>            
-            <footer>
-                {{#person}}
-                    {{#contact.email}}
-                        Email: {{_ .}}
-                    {{/contact.email}}
+        <aside>
+            {{#person}}
+            <ul>
+                {{#contact.email}}
+                    <li>
+                        Email:
+                        {{_ .}}
+                    </li>
+                {{/contact.email}}
 
-                    {{#contact.phone}}
-                        Phone: {{_ .}}
-                    {{/contact.phone}}
+                {{#contact.phone}}
+                    <li>
+                        Phone:
+                        {{_ .}}
+                    </li>
+                {{/contact.phone}}
 
-                    {{#social.linkedIn}}
-                        LinkedIn: {{_ .}}
-                    {{/social.linkedIn}}
+                {{#social.linkedIn}}
+                    <li>
+                        LinkedIn:
+                        {{_ .}}
+                    </li>
+                {{/social.linkedIn}}
 
-                    {{#social.gitHub}}
-                        GitHub: {{_ .}}
-                    {{/social.gitHub}}
-                {{/person}}
-            </footer>
+                {{#social.gitHub}}
+                    <li>
+                        GitHub: 
+                        {{_ .}}
+                    </li>
+                {{/social.gitHub}}
+            </ul>
+            {{/person}}            
         </aside>
     </body>
 </html>
