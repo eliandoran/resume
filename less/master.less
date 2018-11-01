@@ -6,6 +6,12 @@ html {
     background: white;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 body {
     background: white;
     width: 21cm;
@@ -38,7 +44,7 @@ body {
         box-sizing: border-box;
         background-color: #574E53;
         grid-area: content;
-        color: #C0C0C9;
+        color: #C0C0C9;        
     }
 
     >aside {
@@ -52,11 +58,28 @@ body {
             height: auto;
             border-radius: 50%;
         }
+    }
+}
 
-        ul {
-            padding: 0;
+section.timeline {
+    header {
+        overflow: auto;
+
+        p {
             margin: 0;
-            list-style-type: none;
+            padding: 0;
         }
+
+        .date {
+            float: left;
+        }
+
+        .location {
+            float: right;
+        }
+    }
+
+    li {
+        margin: 1em 0;
     }
 }

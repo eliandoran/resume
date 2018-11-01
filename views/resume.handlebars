@@ -13,7 +13,43 @@
         </header>        
 
         <main>
-            <p class="summary">{{_ person.summary}}</p>            
+            <p class="summary">{{_ person.summary}}</p>       
+
+            <section class="timeline experience">
+                <h2>Work Experience</h2>
+
+                <ul>
+                    {{#workExperience}}
+                    <li>
+                        <header>
+                            <p class="title">{{_ title}}</p>
+                            <p class="company">{{_ company}}</p>                        
+
+                            <p class="date">{{from}} &mdash; {{to}}</p>
+                            <p class="location">{{_ location}}</p>
+                        </header>                        
+                    </li>
+                    {{/workExperience}}
+                </ul>
+            </section>
+
+            <section class="timeline education">
+                <h2>Education</h2>
+
+                <ul>
+                    {{#education}}
+                    <li>
+                        <header>
+                            <p class="degree">{{_ degree}}</p>
+                            <p class="field">{{_ field}}</p>
+
+                            <p class="date">{{from}} &mdash; {{to}}</p>
+                            <p class="location">{{_ location}}</p>
+                        </header>                        
+                    </li>
+                    {{/education}}
+                </ul>
+            </section>
         </main>
 
         <aside>

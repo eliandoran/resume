@@ -27,37 +27,25 @@
 
     "workExperience": [
         {
-            "from": "2016-09",
-            "to": "present",
-            "title": "Freelance Web Developer",
-            "company": "Visual-Fix"
-        },
-
-        {
             "from": "2017-10",
             "to": "2018-01",
             "title": {
                 "en": "Junior Programmer",
                 "ro": "Programator ajutor"
             },
-            "company": "Ausy Technologies Romania"       
+            "company": "Ausy Technologies Romania",
+            "location": "Sibiu, SB, Romania"
+        },
+
+        {
+            "from": "2016-09",
+            "to": "present",
+            "title": "Freelance Web Developer",
+            "company": "Visual-Fix"
         }
     ],
 
     "education": [
-        {
-            "from": "2014",
-            "to": "2016",            
-            "degree": {
-                "en": "Baccalaureate",
-                "ro": "Bacalaureat"
-            },
-            "field": {
-                "en": "Philology (intensive English)",
-                "ro": "Filologie (intensiv engleză)"
-            }
-        },
-
         {
             "from": "2016",
             "to": "present",
@@ -68,7 +56,22 @@
             "field": {
                 "en": "Computer Science",
                 "ro": "Informatică"
-            }
+            },
+            "location": "Sibiu, SB, Romania"
+        },
+
+        {
+            "from": "2014",
+            "to": "2016",            
+            "degree": {
+                "en": "Baccalaureate",
+                "ro": "Bacalaureat"
+            },
+            "field": {
+                "en": "Philology (intensive English)",
+                "ro": "Filologie (intensiv engleză)"
+            },
+            "location": "Drăgășani, VL, Romania"
         }
     ],
 
