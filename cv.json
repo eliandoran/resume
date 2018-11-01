@@ -105,10 +105,16 @@
 
     "skills": [
         {
-            "name": "Web Development"
+            "name": {
+                "en": "Web Development",
+                "ro": "Dezvoltare web"
+            }
         },
         {
-            "name": "Software Development"
+            "name": {
+                "en": "Software Development",
+                "ro": "Dezvoltare software"
+            }
         },
         {
             "name": "Linux"
@@ -121,7 +127,10 @@
                 "en": "Romanian",
                 "ro": "Română"
             },
-            "proficiency": "Native Proficiency"
+            "proficiency":  {
+                "en": "Native Proficiency",
+                "ro": "Limbă nativă"
+            }
         },
 
         {
@@ -129,22 +138,29 @@
                 "en": "English",
                 "ro": "Engleză"
             },
-            "proficiency": "Full Professional Proficiency"
+            "proficiency": {
+                "en": "Full Professional Proficiency",
+                "ro": "Experiență profesională"
+            }
         }
     ],
 
     "interests": [
         {
-            "en": "Web Development"
+            "en": "Web Development",
+            "ro": "Dezvoltare web"
         },
         {
-            "en": "Software Development"
+            "en": "Software Development",
+            "ro": "Dezvoltare software"
         },
         {
-            "en": "Project Management"
+            "en": "Project Management",
+            "ro": "Management proiecte"
         },
         {
-            "en": "Business Administration"
+            "en": "Business Administration",
+            "ro": "Administrarea afacerilor"
         }
     ]
 }

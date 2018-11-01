@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style/master.css" />        
+        <link rel="stylesheet" type="text/css" href="{{root}}/style/master.css" />        
     </head>
 
     <body>
@@ -72,7 +72,7 @@
             <section class="info">
                 {{#person}}
                     {{#avatar}}
-                        <img src="{{.}}" class="avatar" />
+                        <img src="{{root}}/{{.}}" class="avatar" />
                     {{/avatar}}
 
                     <p class="summary">{{_ summary}}</p>       

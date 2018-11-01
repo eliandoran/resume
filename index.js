@@ -38,6 +38,16 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/ro/", (req, res) => {
+    res.render("resume", {
+        ...resume,
+        helpers: {
+            "_": languageHelper("ro"),
+            "url": urlHelper
+        }
+    });
+});
+
 app.listen(port, () => {
     console.log("Server started.");
 });
