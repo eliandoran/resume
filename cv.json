@@ -1,0 +1,121 @@
+{
+    "person": {
+        "firstName": "Elian",
+        "lastName": "Doran",                
+        "address": "Sibiu, RO",
+        "contact": {
+            "email": "elian@doran.xyz",
+            "phone": {
+                "en": "+40 774 056 469",
+                "ro": "0774 056 469"        
+            }
+        },
+        "social": {
+            "linkedIn": "http://linkedin.com/in/eliandoran",
+            "gitHub": "https://github.com/eliandoran"
+        },
+        "subtitle": {
+            "en": "Passionate Software Programmer & Web Developer",
+            "ro": "Programator și web developer pasionat"
+        },
+        "summary": {
+            "en": "A person devoted to the IT profession, capable of adapting to the requirements of many a project and willing to compete with himself",
+            "ro": "O persoană devotată profesiei IT, capabilă să se adapteze la cerințele multor tipuri de proiecte și cu intenția de a se autodepăși"
+        }
+    },
+
+    "workExperience": [
+        {
+            "from": "2016-09",
+            "to": "present",
+            "title": "Freelance Web Developer",
+            "company": "Visual-Fix"
+        },
+
+        {
+            "from": "2017-10",
+            "to": "2018-01",
+            "title": {
+                "en": "Junior Programmer",
+                "ro": "Programator ajutor"
+            },
+            "company": "Ausy Technologies Romania"       
+        }
+    ],
+
+    "education": [
+        {
+            "from": "2014",
+            "to": "2016",            
+            "degree": {
+                "en": "Baccalaureate",
+                "ro": "Bacalaureat"
+            },
+            "field": {
+                "en": "Philology (intensive English)",
+                "ro": "Filologie (intensiv engleză)"
+            }
+        },
+
+        {
+            "from": "2016",
+            "to": "present",
+            "degree": {
+                "en": "Bachelor's Degree",
+                "ro": "Licență"
+            },
+            "field": {
+                "en": "Computer Science",
+                "ro": "Informatică"
+            }
+        }
+    ],
+
+    "skills": [
+        {
+            "en": "Web Development"
+        },
+        {
+            "en": "Software Development"
+        },
+        {
+            "en": "Linux"
+        },
+        {
+            "en": "Object-Oriented Programming (OOP)"
+        }
+    ],
+
+    "languages": [
+        {
+            "name": {
+                "en": "Romanian",
+                "ro": "Română"
+            },
+            "proficiency": "native"
+        },
+
+        {
+            "name": {
+                "en": "English",
+                "ro": "Engleză"
+            },
+            "proficiency": "professional"
+        }
+    ],
+
+    "interests": [
+        {
+            "en": "Web Development"
+        },
+        {
+            "en": "Software Development"
+        },
+        {
+            "en": "Project Management"
+        },
+        {
+            "en": "Business Administration"
+        }
+    ]
+}
