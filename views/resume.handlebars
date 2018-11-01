@@ -3,10 +3,28 @@
     <body>
         <header>
             {{#person}}
-                {{firstName}} {{lastName}}
-                {{_ subtitle}}
-                {{_ summary}}
+                <h1>{{firstName}} {{lastName}}</h1>
+                <p class="subtitle">{{_ subtitle}}</p>            
+                <p class="summary">{{_ summary}}</p>
+
+                <footer>
+                    {{#contact.email}}
+                        Email: {{_ .}}
+                    {{/contact.email}}
+
+                    {{#contact.phone}}
+                        Phone: {{_ .}}
+                    {{/contact.phone}}
+
+                    {{#social.linkedIn}}
+                        LinkedIn: {{_ .}}
+                    {{/social.linkedIn}}
+
+                    {{#social.gitHub}}
+                        GitHub: {{_ .}}
+                    {{/social.gitHub}}
+                </footer>
             {{/person}}
-        </header>
+        </header>        
     </body>
 </html>
