@@ -105,16 +105,13 @@
 
     "skills": [
         {
-            "en": "Web Development"
+            "name": "Web Development"
         },
         {
-            "en": "Software Development"
+            "name": "Software Development"
         },
         {
-            "en": "Linux"
-        },
-        {
-            "en": "Object-Oriented Programming (OOP)"
+            "name": "Linux"
         }
     ],
 
