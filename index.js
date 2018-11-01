@@ -9,6 +9,7 @@ const resume = require("./cv.json");
 
 app.engine("handlebars", exphbs());
 app.use("/style", expressLess(__dirname + "/less"));
+app.use("/assets", express.static(__dirname + "/assets"));
 app.set("view engine", "handlebars");
 
 function languageHelper(language) {

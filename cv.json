@@ -1,5 +1,6 @@
 {
     "person": {
+        "avatar": "./assets/avatar.jpg",
         "firstName": "Elian",
         "lastName": "Doran",                
         "address": "Sibiu, RO",

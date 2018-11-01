@@ -18,36 +18,40 @@
 
         <aside>
             {{#person}}
-            <ul>
-                {{#contact.email}}
-                    <li>
-                        Email:
-                        {{_ .}}
-                    </li>
-                {{/contact.email}}
+                {{#avatar}}
+                    <img src="{{.}}" class="avatar" />
+                {{/avatar}}
 
-                {{#contact.phone}}
-                    <li>
-                        Phone:
-                        {{_ .}}
-                    </li>
-                {{/contact.phone}}
+                <ul>
+                    {{#contact.email}}
+                        <li>
+                            Email:
+                            {{_ .}}
+                        </li>
+                    {{/contact.email}}
 
-                {{#social.linkedIn}}
-                    <li>
-                        LinkedIn:
-                        {{_ .}}
-                    </li>
-                {{/social.linkedIn}}
+                    {{#contact.phone}}
+                        <li>
+                            Phone:
+                            {{_ .}}
+                        </li>
+                    {{/contact.phone}}
 
-                {{#social.gitHub}}
-                    <li>
-                        GitHub: 
-                        {{_ .}}
-                    </li>
-                {{/social.gitHub}}
-            </ul>
-            {{/person}}            
+                    {{#social.linkedIn}}
+                        <li>
+                            LinkedIn:
+                            {{_ .}}
+                        </li>
+                    {{/social.linkedIn}}
+
+                    {{#social.gitHub}}
+                        <li>
+                            GitHub: 
+                            {{_ .}}
+                        </li>
+                    {{/social.gitHub}}
+                </ul>
+                {{/person}}            
         </aside>
     </body>
 </html>
