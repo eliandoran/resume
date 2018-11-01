@@ -13,6 +13,9 @@ app.set("view engine", "handlebars");
 
 function languageHelper(language) {
     return (text) => {
+        if (text === undefined)
+            return undefined;
+
         if (text[language] !== undefined)
             return text[language];
         
