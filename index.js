@@ -9,8 +9,22 @@ const resume = require("./cv.json");
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
+function languageHelper(language) {
+    return (text) => {
+        if (text[language] !== undefined)
+            return text[language];
+        
+        return text;
+    }
+}
+
 app.get("/", (req, res) => {
-    res.render("resume", resume);
+    res.render("resume", {
+        ...resume,
+        helpers: {
+            "_": languageHelper("en")
+        }
+    });
 });
 
 app.listen(port, () => {
