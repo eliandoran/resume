@@ -1,5 +1,6 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
+const expressLess = require("express-less");
 
 const app = express();
 const port = 1337;
@@ -7,6 +8,7 @@ const handlebars = require("handlebars");
 const resume = require("./cv.json");
 
 app.engine("handlebars", exphbs());
+app.use("/style", expressLess(__dirname + "/less"));
 app.set("view engine", "handlebars");
 
 function languageHelper(language) {
