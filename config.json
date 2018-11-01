@@ -1,0 +1,28 @@
+{
+    "sections": {
+        "workExperience": {
+            "en": "Work Experience",
+            "ro": "Experiență profesională"
+        },
+
+        "education": {
+            "en": "Education",
+            "ro": "Educație"
+        },
+
+        "accomplishments": {
+            "en": "Accomplishments",
+            "ro": "Realizări"
+        },
+
+        "languages": {
+            "en": "Languages",
+            "ro": "Limbi"
+        },
+
+        "skills": {
+            "en": "Skills",
+            "ro": "Aptitudini"
+        }
+    }
+}

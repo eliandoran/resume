@@ -6,6 +6,7 @@ const app = express();
 const port = 1337;
 const handlebars = require("handlebars");
 const resume = require("./cv.json");
+const config = require("./config.json");
 
 app.engine("handlebars", exphbs());
 app.use("/style", expressLess(__dirname + "/less"));
@@ -31,6 +32,7 @@ function urlHelper(url) {
 app.get("/", (req, res) => {
     res.render("resume", {
         ...resume,
+        ...config,
         helpers: {
             "_": languageHelper("en"),
             "url": urlHelper
@@ -41,6 +43,7 @@ app.get("/", (req, res) => {
 app.get("/ro/", (req, res) => {
     res.render("resume", {
         ...resume,
+        ...config,
         helpers: {
             "_": languageHelper("ro"),
             "url": urlHelper
