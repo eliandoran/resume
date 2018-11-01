@@ -12,9 +12,7 @@
             {{/person}}
         </header>        
 
-        <main>
-            <p class="summary">{{_ person.summary}}</p>       
-
+        <main>            
             <section class="timeline experience">
                 <h2>Work Experience</h2>
 
@@ -50,6 +48,24 @@
                     {{/education}}
                 </ul>
             </section>
+
+            <section class="timeline accomplishments">
+                <h2>Accomplishments</h2>                
+
+                <ul>
+                    {{#accomplishments}}
+                    <li>
+                        <header>
+                            <p class="title">{{_ title}}</p>
+                        </header>                        
+
+                        <main>
+                            {{description}}
+                        </main>
+                    </li>                    
+                    {{/accomplishments}}
+                </ul>
+            </section>
         </main>
 
         <aside>
@@ -57,6 +73,8 @@
                 {{#avatar}}
                     <img src="{{.}}" class="avatar" />
                 {{/avatar}}
+
+                <p class="summary">{{_ summary}}</p>       
 
                 <ul>
                     {{#contact.email}}
@@ -76,14 +94,14 @@
                     {{#social.linkedIn}}
                         <li>
                             <i class="fab fa-linkedin"></i>
-                            {{_ .}}
+                            {{ url (_ .) }}
                         </li>
                     {{/social.linkedIn}}
 
                     {{#social.gitHub}}
                         <li>
                             <i class="fab fa-github"></i> 
-                            {{_ .}}
+                            {{ url (_ .) }}
                         </li>
                     {{/social.gitHub}}
                 </ul>

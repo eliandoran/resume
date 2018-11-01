@@ -24,11 +24,16 @@ function languageHelper(language) {
     }
 }
 
+function urlHelper(url) {
+    return /(?<=:\/\/).+/.exec(url);
+}
+
 app.get("/", (req, res) => {
     res.render("resume", {
         ...resume,
         helpers: {
-            "_": languageHelper("en")
+            "_": languageHelper("en"),
+            "url": urlHelper
         }
     });
 });
