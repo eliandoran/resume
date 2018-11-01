@@ -7,11 +7,18 @@
     <body>
         <header>
             {{#person}}
-                <h1>{{firstName}} {{lastName}}</h1>
-                <p class="subtitle">{{_ subtitle}}</p>            
-                <p class="summary">{{_ summary}}</p>
+                <h1>{{firstName}} {{lastName}}</h1>                
+                <p class="subtitle">{{_ subtitle}}</p>
+            {{/person}}
+        </header>        
 
-                <footer>
+        <main>
+            <p class="summary">{{_ person.summary}}</p>            
+        </main>
+
+        <aside>            
+            <footer>
+                {{#person}}
                     {{#contact.email}}
                         Email: {{_ .}}
                     {{/contact.email}}
@@ -27,8 +34,8 @@
                     {{#social.gitHub}}
                         GitHub: {{_ .}}
                     {{/social.gitHub}}
-                </footer>
-            {{/person}}
-        </header>        
+                {{/person}}
+            </footer>
+        </aside>
     </body>
 </html>

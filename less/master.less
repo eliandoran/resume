@@ -1,0 +1,41 @@
+@body-side-margins: 1cm;
+@sidebar-width: 30%;
+
+html {
+    padding: 2cm 0;
+    background: white;
+}
+
+body {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    >header {
+        background: #E6C09C;
+        color: #DB2231;
+        padding: 1cm @body-side-margins;
+        flex-grow: 1;
+
+        h1 {
+            margin: 0;
+        }        
+    }
+
+    >main {
+        padding: 0 @body-side-margins;
+        width: (100% - @sidebar-width);
+        box-sizing: border-box;
+        background-color: #574E53;
+    }
+
+    >aside {
+        width: @sidebar-width;
+        background-color: #3D3D42;
+    }
+}
