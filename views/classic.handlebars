@@ -1,142 +1,133 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="{{root}}/style/classic.css" />        
-    </head>
+<header>
+    {{#person}}
+        <h1>{{firstName}} {{lastName}}</h1>                
+        <p class="subtitle">{{_ subtitle}}</p>
+    {{/person}}
+</header>        
 
-    <body>
-        <header>
-            {{#person}}
-                <h1>{{firstName}} {{lastName}}</h1>                
-                <p class="subtitle">{{_ subtitle}}</p>
-            {{/person}}
-        </header>        
+<main>            
+    <section class="timeline experience">
+        <h2>{{_ sections.workExperience}}</h2>
 
-        <main>            
-            <section class="timeline experience">
-                <h2>{{_ sections.workExperience}}</h2>
+        <ul>
+            {{#workExperience}}
+            <li>
+                <header>
+                    <p class="title">{{_ title}}</p>
+                    <p class="company">{{_ company}}</p>                        
 
-                <ul>
-                    {{#workExperience}}
+                    <p class="date">{{from}} &mdash; {{to}}</p>
+                    <p class="location">{{_ location}}</p>
+                </header>                        
+            </li>
+            {{/workExperience}}
+        </ul>
+    </section>
+
+    <section class="timeline education">
+        <h2>{{_ sections.education }}</h2>
+
+        <ul>
+            {{#education}}
+            <li>
+                <header>
+                    <p class="degree">{{_ degree}} in {{_ field}}</p>
+                    <p class="institution">{{_ institution}}</p>
+
+                    <p class="date">{{from}} &mdash; {{to}}</p>
+                    <p class="location">{{_ location}}</p>
+                </header>                        
+            </li>
+            {{/education}}
+        </ul>
+    </section>
+
+    <section class="timeline accomplishments">
+        <h2>{{_ sections.accomplishments }}</h2>                
+
+        <ul>
+            {{#accomplishments}}
+            <li>
+                <header>
+                    <p class="title">{{_ title}}</p>
+                </header>                        
+
+                <main>
+                    {{description}}
+                </main>
+            </li>                    
+            {{/accomplishments}}
+        </ul>
+    </section>
+</main>
+
+<aside>
+    <section class="info">
+        {{#person}}
+            {{#avatar}}
+                <img src="{{root}}/{{.}}" class="avatar" />
+            {{/avatar}}
+
+            <p class="summary">{{_ summary}}</p>       
+
+            <ul>
+                {{#contact.email}}
                     <li>
-                        <header>
-                            <p class="title">{{_ title}}</p>
-                            <p class="company">{{_ company}}</p>                        
-
-                            <p class="date">{{from}} &mdash; {{to}}</p>
-                            <p class="location">{{_ location}}</p>
-                        </header>                        
+                        <i class="fas fa-envelope"></i>
+                        {{_ .}}
                     </li>
-                    {{/workExperience}}
-                </ul>
-            </section>
+                {{/contact.email}}
 
-            <section class="timeline education">
-                <h2>{{_ sections.education }}</h2>
-
-                <ul>
-                    {{#education}}
+                {{#contact.phone}}
                     <li>
-                        <header>
-                            <p class="degree">{{_ degree}} in {{_ field}}</p>
-                            <p class="institution">{{_ institution}}</p>
-
-                            <p class="date">{{from}} &mdash; {{to}}</p>
-                            <p class="location">{{_ location}}</p>
-                        </header>                        
+                        <i class="fas fa-phone"></i>
+                        {{_ .}}
                     </li>
-                    {{/education}}
-                </ul>
-            </section>
+                {{/contact.phone}}
 
-            <section class="timeline accomplishments">
-                <h2>{{_ sections.accomplishments }}</h2>                
-
-                <ul>
-                    {{#accomplishments}}
+                {{#social.linkedIn}}
                     <li>
-                        <header>
-                            <p class="title">{{_ title}}</p>
-                        </header>                        
+                        <i class="fab fa-linkedin"></i>
+                        {{ url (_ .) }}
+                    </li>
+                {{/social.linkedIn}}
 
-                        <main>
-                            {{description}}
-                        </main>
-                    </li>                    
-                    {{/accomplishments}}
-                </ul>
-            </section>
-        </main>
+                {{#social.gitHub}}
+                    <li>
+                        <i class="fab fa-github"></i> 
+                        {{ url (_ .) }}
+                    </li>
+                {{/social.gitHub}}
+            </ul>
+        {{/person}}       
+    </section>     
 
-        <aside>
-            <section class="info">
-                {{#person}}
-                    {{#avatar}}
-                        <img src="{{root}}/{{.}}" class="avatar" />
-                    {{/avatar}}
+    <section class="languages timeline">
+        <h2>{{_ sections.languages }}</h2>
 
-                    <p class="summary">{{_ summary}}</p>       
+        <ul>
+            {{#languages}}
+                <li>
+                    <header>
+                        <p class="language">{{_ name}}</p>
+                        <p class="proficiency">{{_ proficiency}}</p>
+                    </header>
+                </li>
+            {{/languages}}
+        </ul>
+    </section>
 
-                    <ul>
-                        {{#contact.email}}
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                {{_ .}}
-                            </li>
-                        {{/contact.email}}
+    <section class="skills timeline">
+        <h2>{{_ sections.skills }}</h2>
 
-                        {{#contact.phone}}
-                            <li>
-                                <i class="fas fa-phone"></i>
-                                {{_ .}}
-                            </li>
-                        {{/contact.phone}}
-
-                        {{#social.linkedIn}}
-                            <li>
-                                <i class="fab fa-linkedin"></i>
-                                {{ url (_ .) }}
-                            </li>
-                        {{/social.linkedIn}}
-
-                        {{#social.gitHub}}
-                            <li>
-                                <i class="fab fa-github"></i> 
-                                {{ url (_ .) }}
-                            </li>
-                        {{/social.gitHub}}
-                    </ul>
-                {{/person}}       
-            </section>     
-
-            <section class="languages timeline">
-                <h2>{{_ sections.languages }}</h2>
-
-                <ul>
-                    {{#languages}}
-                        <li>
-                            <header>
-                                <p class="language">{{_ name}}</p>
-                                <p class="proficiency">{{_ proficiency}}</p>
-                            </header>
-                        </li>
-                    {{/languages}}
-                </ul>
-            </section>
-
-            <section class="skills timeline">
-                <h2>{{_ sections.skills }}</h2>
-
-                <ul>
-                    {{#skills}}
-                        <li>
-                            <header>
-                                <p class="skill">{{_ name }}</p>
-                            </header>
-                        </li>
-                    {{/skills}}
-                </ul>
-            </section>
-        </aside>
-    </body>
-</html>
+        <ul>
+            {{#skills}}
+                <li>
+                    <header>
+                        <p class="skill">{{_ name }}</p>
+                    </header>
+                </li>
+            {{/skills}}
+        </ul>
+    </section>
+</aside>

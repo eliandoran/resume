@@ -8,7 +8,10 @@ const handlebars = require("handlebars");
 const resume = require("./cv.json");
 const config = require("./config.json");
 
-app.engine("handlebars", exphbs());
+app.engine("handlebars", exphbs({
+    defaultLayout: "default"
+}));
+
 app.use("/style", expressLess(__dirname + "/less"));
 app.use("/assets", express.static(__dirname + "/assets"));
 app.set("view engine", "handlebars");
@@ -33,6 +36,7 @@ app.get("/", (req, res) => {
     res.render("classic", {
         ...resume,
         ...config,
+        styleName: "classic",
         helpers: {
             "_": languageHelper("en"),
             "url": urlHelper
@@ -44,6 +48,7 @@ app.get("/ro/", (req, res) => {
     res.render("classic", {
         ...resume,
         ...config,
+        styleName: "classic",
         helpers: {
             "_": languageHelper("ro"),
             "url": urlHelper
@@ -55,6 +60,7 @@ app.get("/modern/", (req, res) => {
     res.render("modern", {
         ...resume,
         ...config,
+        styleName: "modern",
         helpers: {
             "_": languageHelper("en"),
             "url": urlHelper
