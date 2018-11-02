@@ -76,12 +76,36 @@ body > aside {
         color: black;
 
         .avatar {
+            position: relative;
             display: block;
             width: 70%;
-            height: auto;
-            border-radius: 50%;
             margin: auto;
             margin-bottom: 0.75cm;
+            border: 5px solid white;
+            border-radius: 50%;
+            
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+
+            &:before {
+                @border-size: 8px;
+                @gap-size: 11px;
+                @total-size: (@border-size + @gap-size);
+
+                content: "";
+                position: absolute;
+                top: -@total-size;
+                left: -@total-size;
+                right: -@total-size;
+                bottom: -@total-size;
+
+                border: @border-size solid #292a2c;
+                border-radius: 50%;
+            }
         }
 
         section {
