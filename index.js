@@ -8,6 +8,8 @@ const handlebars = require("handlebars");
 const resume = require("./cv.json");
 const config = require("./config.json");
 
+const helpers = require("./src/helpers");
+
 app.engine("handlebars", exphbs({
     defaultLayout: "default"
 }));
@@ -15,22 +17,6 @@ app.engine("handlebars", exphbs({
 app.use("/style", expressLess(__dirname + "/less"));
 app.use("/assets", express.static(__dirname + "/assets"));
 app.set("view engine", "handlebars");
-
-function languageHelper(language) {
-    return (text) => {
-        if (text === undefined)
-            return undefined;
-
-        if (text[language] !== undefined)
-            return text[language];
-        
-        return text;
-    }
-}
-
-function urlHelper(url) {
-    return /(?<=:\/\/).+/.exec(url);
-}
 
 app.get("/", (req, res) => {
     const styleName = req.query.theme || "modern";
@@ -41,8 +27,8 @@ app.get("/", (req, res) => {
         ...config,
         styleName,
         helpers: {
-            "_": languageHelper("en"),
-            "url": urlHelper
+            "_": helpers.languageHelper("en"),
+            "url": helpers.urlHelper
         }
     });
 });
