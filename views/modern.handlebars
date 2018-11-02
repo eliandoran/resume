@@ -97,6 +97,28 @@
 
     <section class="education">
         <h2>{{_ sections.education}}</h2>
+
+        <ul>
+            {{#education}}
+            <li>
+                <header>
+                    <h3 class="title">{{_ degree}} in {{_ field}}</h3>
+
+                    {{#institution}}
+                    <p class="institution">{{_ .}}</p>
+                    {{/institution}}
+
+                    {{#from}}
+                    <p class="date">{{../from}} &mdash; {{../to}}</p>
+                    {{/from}}
+
+                    {{#location}}
+                    <p class="location">{{_ .}}</p>
+                    {{/location}}
+                </header>
+            </li>
+            {{/education}}
+        </ul>
     </section>
 
     <section class="accomplishments">
