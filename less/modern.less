@@ -169,11 +169,19 @@ body > aside {
 
         section.languages {
             ul {
+                @margin: 0.2em;
                 display: flex;
+                margin: 0 -(2 * @margin);
 
                 li {
-                    flex-grow: 1;      
-                    position: relative;                         
+                    flex-grow: 1;                           
+                    margin: @margin;
+
+                    .inner-wrapper {
+                        position: relative;
+                        height: 0;
+                        padding-bottom: 100%;       
+                    }
                     
                     .language {
                         background-color: #f9d36e;
@@ -183,8 +191,7 @@ body > aside {
                         top: 0;
                         left: 0;
                         width: 100%;
-                        height: 0;
-                        padding-bottom: 100%;    
+                        height: 100%;
                         text-align: center;
                         box-sizing: border-box;
                         
@@ -200,11 +207,14 @@ body > aside {
                                 font-size: 0.8em;
                                 font-weight: bold;
                                 text-transform: uppercase;
+                                margin-bottom: 0.5em;
                                 display: block;
                             }
 
                             .proficiency {
                                 font-size: 0.7em;
+                                display: block;
+                                line-height: 1.1;
                             }
                         }
                     }
