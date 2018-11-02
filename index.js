@@ -33,10 +33,13 @@ function urlHelper(url) {
 }
 
 app.get("/", (req, res) => {
-    res.render("classic", {
+    const styleName = req.query.theme || "modern";
+    console.log(req);
+
+    res.render(styleName, {
         ...resume,
         ...config,
-        styleName: "classic",
+        styleName,
         helpers: {
             "_": languageHelper("en"),
             "url": urlHelper
@@ -55,19 +58,6 @@ app.get("/ro/", (req, res) => {
         }
     });
 });
-
-app.get("/modern/", (req, res) => {
-    res.render("modern", {
-        ...resume,
-        ...config,
-        styleName: "modern",
-        helpers: {
-            "_": languageHelper("en"),
-            "url": urlHelper
-        }
-    });
-});
-
 
 app.listen(port, () => {
     console.log("Server started.");
