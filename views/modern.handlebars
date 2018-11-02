@@ -123,5 +123,17 @@
 
     <section class="accomplishments">
         <h2>{{_ sections.accomplishments}}</h2>
+
+        <ul>
+            {{#accomplishments}}
+            <li>
+                <header>
+                    <h3 class="title">{{_ title}}</h3>
+                </header>
+
+                <p class="description">{{_ description }}</p>
+            </li>
+            {{/accomplishments}}
+        </ul>
     </section>
 </main>

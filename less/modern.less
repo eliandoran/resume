@@ -4,7 +4,7 @@
 
 @sidebar-width: 35%;
 @sidebar-left-margin: 1cm;
-@content-left-margin: 1.25cm;
+@content-left-margin: 1cm;
 
 @font-face {
     font-family: "Roboto";
@@ -34,6 +34,10 @@ h1, h2 {
 
 h1, h2, h3 {
     margin: 0;
+}
+
+body {
+    font-size: 11.5pt;
 }
 
 body > aside {
@@ -247,25 +251,56 @@ body > header {
 body > main {
     section {
         &.highlighted {
-            background: #cacacc;
+            background: #d7d7d7;
         }
 
-        padding-top: 1cm;
-        padding-bottom: 1cm;
+        @vertical-padding: 0.8cm;
+        padding-top: @vertical-padding;
+        padding-bottom: @vertical-padding;
     }
 
-    ul > li > header > p {
-        display: inline-block;
-        font-size: 0.9em;
-        background-color: @primary-color;
-        border-radius: 6px;
-        padding: 0.25cm;
-        margin: 0;
-        margin-right: 0.1cm;
-        margin-bottom: 0.1cm;
+    h2 {
+        margin-bottom: 0.5cm;
+    }
 
-        &:last-of-type {
-            margin-right: 0;
+    h3 {
+        font-size: 1em;
+        line-height: 1;
+    }
+
+    ul {
+        li {
+            margin-bottom: 0.5cm;
+
+            header {
+                p {
+                    display: inline-block;
+                    font-size: 0.8em;
+                    background-color: @primary-color;
+                    border-radius: 6px;
+                    padding: 0.1cm;
+                    margin: 0;
+                    margin-right: 0.05cm;
+                    margin-bottom: 0.05cm;
+            
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    section.accomplishments {
+        padding-top: 0;
+
+        .description {
+            font-size: 0.8em;
+            line-height: 1.1;
         }
     }
 }
