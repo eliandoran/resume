@@ -4,8 +4,8 @@ const expressLess = require("express-less");
 
 const app = express();
 const handlebars = require("handlebars");
-const resume = require("../cv.json");
-const config = require("../config.json");
+const resume = require("./data/cv.json");
+const config = require("./data/config.json");
 
 const helpers = require("./helpers");
 
