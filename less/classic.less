@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab:400,700&subset=latin-ext');
 @import url('https://use.fontawesome.com/releases/v5.4.2/css/all.css');
 
+@import "base";
+
 @body-side-margins: 1cm;
 @sidebar-width: 30%;
 
 html {
-    padding: 2cm 0;
-    background: white;
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -23,13 +23,7 @@ ul {
 }
 
 body {
-    background: white;
-    width: 21cm;
-    height: 29.7cm;
-    box-sizing: border-box;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap;
-    margin: 0 auto;
+    flex-wrap: wrap;    
     display: grid;
     grid-template-areas:
         "header header"
