@@ -30,7 +30,7 @@ function urlHelper(url) {
 }
 
 app.get("/", (req, res) => {
-    res.render("resume", {
+    res.render("classic", {
         ...resume,
         ...config,
         helpers: {
@@ -41,7 +41,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/ro/", (req, res) => {
-    res.render("resume", {
+    res.render("classic", {
         ...resume,
         ...config,
         helpers: {
@@ -50,6 +50,18 @@ app.get("/ro/", (req, res) => {
         }
     });
 });
+
+app.get("/modern/", (req, res) => {
+    res.render("modern", {
+        ...resume,
+        ...config,
+        helpers: {
+            "_": languageHelper("en"),
+            "url": urlHelper
+        }
+    });
+});
+
 
 app.listen(port, () => {
     console.log("Server started.");
