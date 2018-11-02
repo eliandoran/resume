@@ -14,19 +14,18 @@
 </header>
 
 <aside>
-    {{#person}}
     <section class="primary">
-        {{#avatar}}
+        {{#person.avatar}}
         <div class="avatar">
             <img src="{{root}}/{{.}}" />
         </div>
-        {{/avatar}}
+        {{/person.avatar}}
 
         <section class="skills">
             <h2>Skills</h2>
 
             <ul>
-                {{#../skills}}
+                {{#skills}}
                     <li>
                         <span class="name">{{_ name}}</span>
                         <span class="value">
@@ -36,7 +35,7 @@
                             <span class="screen-reader-text">{{percentage}}</span>
                         </span>
                     </li>
-                {{/../skills}}
+                {{/skills}}
             </ul>
         </section>  
 
@@ -44,7 +43,7 @@
             <h2>Languages</h2>
 
             <ul>
-                {{#../languages}}
+                {{#languages}}
                 <li>
                     <div class="inner-wrapper">
                         <div class="language">
@@ -55,11 +54,10 @@
                         </div>
                     </div>
                 </li>            
-                {{/../languages}}
+                {{/languages}}
             </ul>
         </section>      
     </section>
-    {{/person}}
 
     <section class="interests">
         <h2>Interests</h2>
