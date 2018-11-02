@@ -1,1 +1,67 @@
 @import "base";
+
+@primary-color: #f8c536;
+
+@sidebar-width: 30%;
+@sidebar-left-margin: 1cm;
+@content-left-margin: 1.25cm;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    bottom: 0;
+    width: @sidebar-width; 
+    display: flex;
+    flex-direction: row;
+    padding-left: @sidebar-left-margin;
+    box-sizing: border-box;
+    
+    section.primary {
+        flex-grow: 1;
+        background-color: @primary-color;
+        padding: 1cm 0;
+
+        .avatar {
+            display: block;
+            width: 70%;
+            height: auto;
+            border-radius: 50%;
+            margin: auto;
+        }
+    }
+}
+
+header,
+main {
+    >* {
+        padding-left: calc(@sidebar-width + @content-left-margin);
+    }
+}
+
+header {
+    background: #343537;
+    color: white;
+    padding-top: 1.5cm;
+
+    h1 {
+        margin: 0;
+    }
+
+    .contact-information {
+        background: #212121;
+        display: flex;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+
+        >* {
+            flex-grow: 1;
+        }
+    }
+}

@@ -1,1 +1,42 @@
-Hi
+<header>
+    <h1>
+        {{person.firstName}} {{person.lastName}}
+    </h1>
+
+    <p class="badge subtitle">{{_ person.subtitle}}</p>
+    <p class="summary">{{_ person.summary }}</p>
+
+    <ul class="contact-information">
+        <li class="email">{{_ person.contact.email }}</li>
+        <li class="phone">{{_ person.contact.phone }}</li>
+        <li class="linkedIn">{{url (_ person.social.linkedIn) }}</li>
+    </ul>    
+</header>
+
+<aside>
+    {{#person}}
+    <section class="primary">
+        {{#avatar}}
+        <img src="{{root}}/{{.}}" class="avatar" />
+        {{/avatar}}
+    </section>
+
+    <section class="interests">
+
+    </section>
+    {{/person}}
+</aside>
+
+<main>
+    <section class="work-experience">
+
+    </section>
+
+    <section class="education">
+
+    </section>
+
+    <section class="accomplishments">
+        
+    </section>
+</main>
