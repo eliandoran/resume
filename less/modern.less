@@ -69,6 +69,60 @@ body > aside {
             margin: auto;
             margin-bottom: 0.75cm;
         }
+
+        section {
+            padding: 0;
+        }
+
+        h2 {
+            margin-bottom: 0.5em;
+        }
+
+        section.skills {
+            ul {
+                li {
+                    overflow: auto;
+                    font-size: 0.9em;
+                    display: table-row;
+
+                    .name,
+                    .value {
+                        width: 50%;
+                        box-sizing: border-box;
+                        display: table-cell;
+                        vertical-align: middle;
+                        text-align: right;
+                        padding-right: 0.5em;
+                        border-bottom: 0.25em solid transparent;
+                    }
+
+                    .value {
+                        @height: 0.5em;
+                        position: relative;
+                        
+                        .progress-bar {
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            width: 100%;
+                            transform: translateY(-50%);
+                            border-radius: (@height / 2);
+                            background-color: #f9d36e;
+                            height: @height;
+                            
+                            .progress {
+                                position: absolute;
+                                background-color: #2a2a2c;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                border-radius: (@height / 2);
+                            }
+                        }                        
+                    }
+                }
+            }
+        }
     }
 
     section.interests {

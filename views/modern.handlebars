@@ -20,7 +20,23 @@
         <img src="{{root}}/{{.}}" class="avatar" />
         {{/avatar}}
 
-        <h2>Skills</h2>
+        <section class="skills">
+            <h2>Skills</h2>
+
+            <ul>
+                {{#../skills}}
+                    <li>
+                        <span class="name">{{_ name}}</span>
+                        <span class="value">
+                            <span class="progress-bar">
+                                <span class="progress" style="width: {{percentage}}%" />
+                            </span>
+                            <span class="screen-reader-text">{{percentage}}</span>
+                        </span>
+                    </li>
+                {{/../skills}}
+            </ul>
+        </section>        
     </section>
     {{/person}}
 

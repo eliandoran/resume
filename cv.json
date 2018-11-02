@@ -105,19 +105,98 @@
 
     "skills": [
         {
-            "name": {
-                "en": "Web Development",
-                "ro": "Dezvoltare web"
-            }
+            "name": "C/C++",
+            "percentage": 50
         },
+
         {
-            "name": {
-                "en": "Software Development",
-                "ro": "Dezvoltare software"
-            }
+            "name": "C#",
+            "percentage": 100
         },
+
         {
-            "name": "Linux"
+            "name": "Python",
+            "percentage": 90
+        },
+
+        {
+            "name": "MATLAB",
+            "percentage": 80
+        },
+
+        {
+            "name": "HTML 5",
+            "percentage": 70
+        },
+
+        {
+            "name": "CSS 3",
+            "percentage": 60
+        },
+
+        {
+            "name": "Less",
+            "percentage": 50
+        },
+
+        {
+            "name": "PHP",
+            "percentage": 40
+        },
+
+        {
+            "name": "SQL",
+            "percentage": 30
+        },
+
+        {
+            "name": "JavaScript",
+            "percentage": 90
+        },
+
+        {
+            "name": "jQuery",
+            "percentage": 20
+        },
+
+        {
+            "name": "Framework7",
+            "percentage": 10
+        },
+
+        {
+            "name": "Grunt",
+            "percentage": 20
+        },
+
+        {
+            "name": "BashGit",
+            "percentage": 30
+        },
+
+        {
+            "name": "Regex",
+            "percentage": 40
+        },
+
+        {
+            "name": "XPath",
+            "percentage": 50
+        },
+
+        {
+            "name": "LaTeX",
+            "percentage": 60
+        },
+
+        {
+            "name": "Wordpress Development",
+            "percentage": 70
+        },
+
+        {
+            "name": "Linux",
+            "percentage": 90
         }
     ],
 
