@@ -38,6 +38,16 @@ h1, h2, h3 {
 
 body {
     font-size: 11.5pt;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0.25cm;
+        height: 70%;
+        background: @primary-color;
+    }
 }
 
 body > aside {
