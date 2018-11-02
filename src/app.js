@@ -1,15 +1,14 @@
 const express = require("express");
-const exphbs = require("express-handlebars");
+const expressHandlebars = require("express-handlebars");
 const expressLess = require("express-less");
 
-const app = express();
-const handlebars = require("handlebars");
+const helpers = require("./helpers");
 const resume = require("./data/cv.json");
 const config = require("./data/config.json");
 
-const helpers = require("./helpers");
+const app = express();
 
-app.engine("handlebars", exphbs({
+app.engine("handlebars", expressHandlebars({
     defaultLayout: "default"
 }));
 
