@@ -19,12 +19,20 @@
         {{#avatar}}
         <img src="{{root}}/{{.}}" class="avatar" />
         {{/avatar}}
-    </section>
 
-    <section class="interests">
-
+        <h2>Skills</h2>
     </section>
     {{/person}}
+
+    <section class="interests">
+        <h2>Interests</h2>
+
+        <ul class="interests">
+            {{#interests}}
+                <li>{{_ .}}</li>
+            {{/interests}}
+        </ul>
+    </section>    
 </aside>
 
 <main>

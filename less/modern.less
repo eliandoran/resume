@@ -12,6 +12,10 @@ ul {
     padding: 0;
 }
 
+h1, h2 {
+    margin: 0;
+}
+
 aside {
     position: absolute;
     top: 0;
@@ -19,14 +23,23 @@ aside {
     bottom: 0;
     width: @sidebar-width; 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-left: @sidebar-left-margin;
-    box-sizing: border-box;
+    box-sizing: border-box;  
+
+    section {
+        padding: 1cm 0.5cm;
+    }
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
     
     section.primary {
         flex-grow: 1;
         background-color: @primary-color;
-        padding: 1cm 0;
+        color: black;
 
         .avatar {
             display: block;
@@ -34,6 +47,27 @@ aside {
             height: auto;
             border-radius: 50%;
             margin: auto;
+            margin-bottom: 0.75cm;
+        }
+    }
+
+    section.interests {
+        margin-top: 0.5cm;
+        background-color: #292a2c;          
+        color: white;
+
+        h2 {
+            color: @primary-color;
+        }
+
+        .interests {
+            >* {
+                display: inline-block;
+                border: 1px solid @primary-color;
+                border-radius: 6px;
+                padding: 0.25em;
+                margin: 0.1em;
+            }
         }
     }
 }
