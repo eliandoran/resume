@@ -180,11 +180,6 @@
         },
 
         {
-            "name": "XPath",
-            "percentage": 50
-        },
-
-        {
             "name": "LaTeX",
             "percentage": 60
         },
@@ -207,7 +202,7 @@
                 "ro": "Română"
             },
             "proficiency":  {
-                "en": "Native Proficiency",
+                "en": "Native Language",
                 "ro": "Limbă nativă"
             }
         },

@@ -36,7 +36,24 @@
                     </li>
                 {{/../skills}}
             </ul>
-        </section>        
+        </section>  
+
+        <section class="languages">
+            <h2>Languages</h2>
+
+            <ul>
+                {{#../languages}}
+                <li>
+                    <div class="language">
+                        <div class="info">
+                            <span class="name">{{_ name}}</span>
+                            <span class="proficiency">{{_ proficiency }}</span>
+                        </div>
+                    </div>
+                </li>            
+                {{/../languages}}
+            </ul>
+        </section>      
     </section>
     {{/person}}
 
