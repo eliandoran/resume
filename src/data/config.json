@@ -38,6 +38,11 @@
         "skills": {
             "en": "Skills",
             "ro": "Aptitudini"
+        },
+
+        "interests": {
+            "en": "Interests",
+            "ro": "Interese"
         }
     }
 }
