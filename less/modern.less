@@ -6,10 +6,30 @@
 @sidebar-left-margin: 1cm;
 @content-left-margin: 1.25cm;
 
+@font-face {
+    font-family: "Roboto";
+    src: url("/assets/fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cocogoose";
+    src: url("/assets/fonts/cocogoose/Cocogoose Pro-trial.ttf");
+}
+
+body {
+    font-family: "Roboto";
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+h1, h2 {
+    font-family: "Cocogoose";
+    text-transform: uppercase;
+    color: #292a2c;
 }
 
 h1, h2, h3 {
@@ -86,6 +106,7 @@ body > header {
 
     h1 {
         margin: 0;
+        color: inherit;
     }
 
     .contact-information {
