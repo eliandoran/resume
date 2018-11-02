@@ -96,6 +96,7 @@ body > header,
 body > main {
     >* {
         padding-left: calc(@sidebar-width + @content-left-margin);
+        padding-right: 1cm;
     }    
 }
 
@@ -107,13 +108,31 @@ body > header {
     h1 {
         margin: 0;
         color: inherit;
+        font-size: 2.1em;
+    }
+
+    .subtitle {
+        display: inline-block;
+        margin: 0;
+        padding: 0.25cm 0.5cm;
+        background-color: @primary-color;
+        border-radius: 6px;
+        color: black;
+        margin-left: calc(@sidebar-width + @content-left-margin);        
+        font-size: 0.9em;
+    }
+
+    .summary {
+        font-size: 0.8em;
+        margin-bottom: 1cm;
     }
 
     .contact-information {
         background: #212121;
         display: flex;
-        padding-top: 0.25em;
-        padding-bottom: 0.25em;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+        font-size: 0.8em;
 
         >* {
             flex-grow: 1;
