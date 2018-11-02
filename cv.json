@@ -81,25 +81,29 @@
         {
             "title": "Special Prize at the International Conference on Applied Informatics - Imagination, Creativity, Design, Development",
             "description": "Co-authored an article entitled \"Devising an Improved University Management System\". Built a demo mobile app based upon the premise of improving the relationship & communication between universities and students.",
-            "date": "2017"
+            "date": "2017",
+            "location": "Sibiu"
         },
 
         {
-            "title": "Gold Medal at National Olympiad of Information Technology, Bacău",
+            "title": "Gold Medal at National Olympiad of Information Technology",
             "description": "Developed a C# application according to the specifications in a 6-hour time frame. Created using WinForms and an SQL database.",
-            "date": "2016-05"
+            "date": "2016-05",
+            "location": "Bacău"
         },
 
         {
-            "title": "1st place at \"AcadNet\" National Contest, Bucharest",
+            "title": "1st place at \"AcadNet\" National Contest",
             "description": "Three hours each of theoretical and practical examination of Network Administration (CCNA prep) and SysAdmin skills using simulators and virtual machines.",
-            "date": "2016-04"            
+            "date": "2016-04",
+            "location": "Bucharest"
         },
 
         {
-            "title": "1st place at \"Grigore Moisil\" Software National Contest, Lugoj",
+            "title": "1st place at \"Grigore Moisil\" Software National Contest",
             "description": "Participated with a photorealistic 2D video game. Created a custom game engine with 10.000 lines of C# and MonoGame/XNA.",
-            "date": "2015-05"
+            "date": "2015-05",
+            "location": "Lugoj"
         }
     ],
 
