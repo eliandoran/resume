@@ -36,15 +36,37 @@
 </aside>
 
 <main>
-    <section class="work-experience">
+    <section class="work-experience highlighted">
+        <h2>{{_ sections.workExperience}}</h2>
 
+        <ul>
+            {{#workExperience}}
+            <li>
+                <header>
+                    <h3 class="title">{{_ title}}</h3>
+
+                    {{#company}}
+                    <p class="company">{{_ .}}</p>
+                    {{/company}}
+
+                    {{#from}}
+                    <p class="date">{{../from}} &mdash; {{../to}}</p>
+                    {{/from}}
+
+                    {{#location}}
+                    <p class="location">{{_ .}}</p>
+                    {{/location}}
+                </header>
+            </li>
+            {{/workExperience}}
+        </ul>
     </section>
 
     <section class="education">
-
+        <h2>{{_ sections.education}}</h2>
     </section>
 
     <section class="accomplishments">
-        
+        <h2>{{_ sections.accomplishments}}</h2>
     </section>
 </main>

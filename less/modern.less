@@ -12,11 +12,11 @@ ul {
     padding: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin: 0;
 }
 
-aside {
+body > aside {
     position: absolute;
     top: 0;
     left: 0;    
@@ -72,14 +72,14 @@ aside {
     }
 }
 
-header,
-main {
+body > header,
+body > main {
     >* {
         padding-left: calc(@sidebar-width + @content-left-margin);
-    }
+    }    
 }
 
-header {
+body > header {
     background: #343537;
     color: white;
     padding-top: 1.5cm;
@@ -96,6 +96,32 @@ header {
 
         >* {
             flex-grow: 1;
+        }
+    }
+}
+
+body > main {
+    section {
+        &.highlighted {
+            background: #cacacc;
+        }
+
+        padding-top: 1cm;
+        padding-bottom: 1cm;
+    }
+
+    ul > li > header > p {
+        display: inline-block;
+        font-size: 0.9em;
+        background-color: @primary-color;
+        border-radius: 6px;
+        padding: 0.25cm;
+        margin: 0;
+        margin-right: 0.1cm;
+        margin-bottom: 0.1cm;
+
+        &:last-of-type {
+            margin-right: 0;
         }
     }
 }
