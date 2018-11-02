@@ -1,4 +1,19 @@
 {
+    "languageData": {
+        "en": {
+            "name": {
+                "en": "English",
+                "ro": "Engleză"
+            }
+        },
+        "ro": {
+            "name": {
+                "en": "Romanian",
+                "ro": "Română"
+            }
+        }
+    },
+
     "sections": {
         "workExperience": {
             "en": "Work Experience",
