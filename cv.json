@@ -165,12 +165,7 @@
         },
 
         {
-            "name": "Grunt",
-            "percentage": 20
-        },
-
-        {
-            "name": "BashGit",
+            "name": "Git",
             "percentage": 30
         },
 
@@ -235,6 +230,10 @@
         {
             "en": "Business Administration",
             "ro": "Administrarea afacerilor"
+        },
+        {
+            "en": "Philosophy",
+            "ro": "Filosofie"
         }
     ]
 }
