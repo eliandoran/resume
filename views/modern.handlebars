@@ -1,16 +1,32 @@
 <header>
+    {{#person}}
     <h1>
-        {{person.firstName}} {{person.lastName}}
+        {{firstName}} {{lastName}}
     </h1>
 
-    <p class="badge subtitle">{{_ person.subtitle}}</p>
-    <p class="summary">{{_ person.summary }}</p>
+    <p class="badge subtitle">{{_ subtitle}}</p>
+    <p class="summary">{{_ summary }}</p>
 
-    <ul class="contact-information">
-        <li class="email">{{_ person.contact.email }}</li>
-        <li class="phone">{{_ person.contact.phone }}</li>
-        <li class="linkedIn">{{url (_ person.social.linkedIn) }}</li>
+    <ul class="contact-information">     
+        {{#contact.email}}   
+        <li class="email">
+            <a href="mailto:{{_ .}}">{{_ .}}</a>
+        </li>
+        {{/contact.email}}
+
+        {{#contact.phone}}
+        <li class="phone">
+            <a href="tel:{{_ .}}">{{_ .}}</a>
+        </li>
+        {{/contact.phone}}
+
+        {{#social.linkedIn}}
+        <li class="linkedIn">
+            <a href="{{_ .}}" target="_blank">{{url (_ .) }}</a>
+        </li>
+        {{/social.linkedIn}}
     </ul>    
+    {{/person}}
 </header>
 
 <aside>

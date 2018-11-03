@@ -36,6 +36,17 @@ h1, h2, h3 {
     margin: 0;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 250ms color ease-in-out;
+
+    &:hover {
+        color: @primary-color;
+        text-decoration: underline;
+    }
+}
+
 body {
     font-size: 11.5pt;
 
