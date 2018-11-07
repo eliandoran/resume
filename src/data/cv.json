@@ -27,7 +27,7 @@
 
     "workExperience": [
         {
-            "from": "2017-10",
+            "from": "Oct 2017",
             "to": "present",
             "title": {
                 "en": "Junior Programmer",
@@ -35,13 +35,6 @@
             },
             "company": "Ausy Technologies Romania",
             "location": "Sibiu, Romania"
-        },
-
-        {
-            "from": "2016-09",
-            "to": "present",
-            "title": "Freelance Web Developer",
-            "company": "Visual-Fix"
         }
     ],
 
@@ -57,7 +50,10 @@
                 "en": "Computer Science",
                 "ro": "Informatică"
             },
-            "institution": "Lucian Blaga University of Sibiu",
+            "institution": {
+                "en": "Lucian Blaga University of Sibiu",
+                "ro": "Universitatea „Lucian Blaga” din Sibiu"
+            },
             "location": "Sibiu, SB, Romania"
         },
 
@@ -72,36 +68,63 @@
                 "en": "Philology (intensive English)",
                 "ro": "Filologie (intensiv engleză)"
             },
-            "institution": "\"Gib Mihăescu\" National High School",
+            "institution": {
+                "en": "\"Gib Mihăescu\" National High School",
+                "ro": "Colegiul Național „Gib Mihăescu”"
+            },
             "location": "Drăgășani, VL, Romania"
         }
     ],
 
     "accomplishments": [
         {
-            "title": "Special Prize at the International Conference on Applied Informatics - Imagination, Creativity, Design, Development",
-            "description": "Co-authored an article entitled \"Devising an Improved University Management System\". Built a demo mobile app based upon the premise of improving the relationship & communication between universities and students.",
+            "title": {
+                "en": "Special Prize at the International Conference on Applied Informatics - Imagination, Creativity, Design, Development",
+                "ro": "Premiu special la International Conference on Applied Informatics - Imagination, Creativity, Design, Development"
+            },
+            "description": {
+                "en": "Co-authored an article entitled \"Devising an Improved University Management System\". Built a demo mobile app based upon the premise of improving the relationship & communication between universities and students.",
+                "ro": "Elaborarea unui articol intitulat \"Devising an Improved University Management System\" și construirea unei aplicații de mobil demonstrative definită cu scopul de a îmbunătăți relația și comunicarea dintre universitate și student."
+            },
             "date": "2017",
             "location": "Sibiu"
         },
 
         {
-            "title": "Gold Medal at National Olympiad of Information Technology",
-            "description": "Developed a C# application according to the specifications in a 6-hour time frame. Created using WinForms and an SQL database.",
+            "title": {
+                "en": "Gold Medal at National Olympiad of Information Technology",
+                "ro": "Medalia de aur la Olimpiada Națională de Tehnologia Informației"
+            },
+            "description": {
+                "en": "Developed a C# application according to the specifications in a 6-hour time frame. Created using WinForms and an SQL database.",
+                "ro": "Dezvoltarea în 6 ore a unei aplicații C# conform specificațiilor concursului. Realizat utilizând interfață grafică (WinForms) și o bază de date."
+            },
             "date": "2016-05",
             "location": "Bacău"
         },
 
         {
-            "title": "1st place at \"AcadNet\" National Contest",
-            "description": "Three hours each of theoretical and practical examination of Network Administration (CCNA prep) and SysAdmin skills using simulators and virtual machines.",
+            "title": {
+                "en": "1st place at \"AcadNet\" National Contest",
+                "ro": "Primul loc la Concursul Național \"AcadNet\""
+            },
+            "description": {
+                "en": "Three hours each of theoretical and practical examination of Network Administration (CCNA prep) and SysAdmin skills using simulators and virtual machines.",
+                "ro": "Examinarea teoretică și practică a aptitudinilor de administrator de rețea (pregătire CCNA) și administrator de sistem utilizând simulatoare și mașini virtuale."
+            },
             "date": "2016-04",
             "location": "Bucharest"
         },
 
         {
-            "title": "1st place at \"Grigore Moisil\" Software National Contest",
-            "description": "Participated with a photorealistic 2D video game. Created a custom game engine with 10.000 lines of C# and MonoGame/XNA.",
+            "title": {
+                "en": "1st place at \"Grigore Moisil\" Software National Contest",
+                "ro": "Primul loc la Concursul Național de Soft \"Grigore Moisil\""
+            },
+            "description": {
+                "en": "Participated with a photorealistic 2D video game. Created a custom game engine with 10.000 lines of C# and MonoGame/XNA.",
+                "ro": "Participarea cu un joc video 2D fotorealist. Motorul jocului a fost creat de la zero folosind doar MonoGame și C#, având 10.000 linii de cod."
+            },
             "date": "2015-05",
             "location": "Lugoj"
         }
@@ -229,7 +252,7 @@
         },
         {
             "en": "Project Management",
-            "ro": "Management proiecte"
+            "ro": "Project Management"
         },
         {
             "en": "Business Administration",
