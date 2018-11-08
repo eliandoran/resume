@@ -10,18 +10,21 @@
     <ul class="contact-information">     
         {{#contact.email}}   
         <li class="email">
+            <i class="far fa-envelope"></i>
             <a href="mailto:{{_ .}}">{{_ .}}</a>
         </li>
         {{/contact.email}}
 
         {{#contact.phone}}
         <li class="phone">
+            <i class="fas fa-phone"></i>
             <a href="tel:{{_ .}}">{{_ .}}</a>
         </li>
         {{/contact.phone}}
 
         {{#social.linkedIn}}
         <li class="linkedIn">
+            <i class="fab fa-linkedin"></i>
             <a href="{{_ .}}" target="_blank">{{url (_ .) }}</a>
         </li>
         {{/social.linkedIn}}
