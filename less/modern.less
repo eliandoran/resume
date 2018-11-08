@@ -143,6 +143,18 @@ body > aside {
                     overflow: auto;
                     font-size: 0.9em;
                     display: table-row;
+
+                    &.header {
+                        display: block;
+                        text-align: center;                        
+                        font-size: 0.75em;
+                        margin-top: 1em;
+
+                        &:first-of-type {
+                            margin-top: 0;
+                        }
+                    }
+
                     .name,
                     .value {
                         width: 50%;
@@ -152,6 +164,11 @@ body > aside {
                         text-align: right;
                         padding-right: 0.5em;
                         border-bottom: 0.5em solid transparent;
+                    }
+
+                    h3 {
+                        padding: 0.75em 0;
+                        text-transform: uppercase;
                     }
 
                     .value {

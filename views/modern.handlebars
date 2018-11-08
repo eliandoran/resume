@@ -45,6 +45,13 @@
 
             <ul>
                 {{#skills}}
+                    <li class="header">
+                        {{#title}}
+                        <h3>{{_ .}}</h3>
+                        {{/title}}
+                    </li>
+
+                    {{#skills}}
                     <li>
                         <span class="name">{{_ name}}</span>
                         <span class="value">
@@ -54,6 +61,7 @@
                             <span class="screen-reader-text">{{percentage}}</span>
                         </span>
                     </li>
+                    {{/skills}}
                 {{/skills}}
             </ul>
         </section>  

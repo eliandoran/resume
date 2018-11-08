@@ -132,88 +132,81 @@
 
     "skills": [
         {
-            "name": "C/C++",
-            "percentage": 50
+            "title": {
+                "en": "Tehnical",
+                "ro": "Tehnice"
+            },
+            "skills": [
+                {
+                    "name": {
+                        "en": "Web Development",
+                        "ro": "Dezvoltare web"
+                    },
+                    "percentage": 85
+                },
+                {
+                    "name": {
+                        "en": "Software Development",
+                        "ro": "Dezvoltare software"
+                    },
+                    "percentage": 80
+                },
+                {
+                    "name": {
+                        "en": "Software Architecture",
+                        "ro": "Arhitectură software"
+                    },
+                    "percentage": 75
+                },                
+                {
+                    "name": "Linux",
+                    "percentage": 70
+                },
+                {
+                    "name": {
+                        "en": "Embedded Technologies",
+                        "ro": "Tehnologii embedded"
+                    },
+                    "percentage": 50
+                }
+            ]
         },
 
         {
-            "name": "C#",
-            "percentage": 100
-        },
+            "title": {
+                "en": "Non-tehnical",
+                "ro": "Non-tehnice"
+            },
+            "skills": [
+                {
+                    "name": {
+                        "en": "Teamwork",
+                        "ro": "Lucrul în echipă"
+                    },
+                    "percentage": 80
+                },
 
-        {
-            "name": "Python",
-            "percentage": 90
-        },
+                {
+                    "name": {
+                        "en": "Mentorship",
+                        "ro": "Mentorat"
+                    },
+                    "percentage": 90
+                },
 
-        {
-            "name": "MATLAB",
-            "percentage": 80
-        },
+                {
+                    "name": {
+                        "en": "Communication",
+                        "ro": "Comunicare"
+                    },
+                    "percentage": 80
+                },
 
-        {
-            "name": "HTML 5",
-            "percentage": 70
-        },
-
-        {
-            "name": "CSS 3",
-            "percentage": 60
-        },
-
-        {
-            "name": "Less",
-            "percentage": 50
-        },
-
-        {
-            "name": "PHP",
-            "percentage": 40
-        },
-
-        {
-            "name": "SQL",
-            "percentage": 30
-        },
-
-        {
-            "name": "JavaScript",
-            "percentage": 90
-        },
-
-        {
-            "name": "jQuery",
-            "percentage": 20
-        },
-
-        {
-            "name": "Framework7",
-            "percentage": 10
-        },
-
-        {
-            "name": "Git",
-            "percentage": 30
-        },
-
-        {
-            "name": "Regex",
-            "percentage": 40
-        },
-
-        {
-            "name": "LaTeX",
-            "percentage": 60
-        },
-
-        {
-            "name": "Wordpress Development",
-            "percentage": 70
-        },
-
-        {
-            "name": "Linux",
-            "percentage": 90
+                {
+                    "name": "Leadership",
+                    "percentage": 70
+                }
+            ]
         }
     ],
 
@@ -243,24 +236,20 @@
 
     "interests": [
         {
-            "en": "Web Development",
-            "ro": "Dezvoltare web"
-        },
-        {
-            "en": "Software Development",
-            "ro": "Dezvoltare software"
-        },
-        {
-            "en": "Project Management",
-            "ro": "Project Management"
-        },
-        {
             "en": "Business Administration",
             "ro": "Administrarea afacerilor"
         },
         {
+            "en": "Personal software projects",
+            "ro": "Proiecte software personale"
+        },        
+        {
             "en": "Philosophy",
             "ro": "Filosofie"
+        },
+        {
+            "en": "Pedagogy",
+            "ro": "Pedagogie"
         }
     ]
 }
