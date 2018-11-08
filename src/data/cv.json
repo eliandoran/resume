@@ -41,7 +41,7 @@
     "education": [
         {
             "from": "2016",
-            "to": "present",
+            "to": "2019",
             "degree": {
                 "en": "Bachelor's Degree",
                 "ro": "Licență"
@@ -54,7 +54,7 @@
                 "en": "Lucian Blaga University of Sibiu",
                 "ro": "Universitatea „Lucian Blaga” din Sibiu"
             },
-            "location": "Sibiu, SB, Romania"
+            "location": "Sibiu, Romania"
         },
 
         {
@@ -72,7 +72,7 @@
                 "en": "\"Gib Mihăescu\" National High School",
                 "ro": "Colegiul Național „Gib Mihăescu”"
             },
-            "location": "Drăgășani, VL, Romania"
+            "location": "Drăgășani, Romania"
         }
     ],
 
