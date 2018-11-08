@@ -113,13 +113,16 @@
 
                     {{#from}}
                     <p class="date">
-                        {{{formatDate ../from "MMM[&nbsp;]YYYY"}}} &mdash;
-                        {{{formatDate ../to "MMM[&nbsp;]YYYY"}}}
+                        <i class="far fa-clock"></i>
+                        {{{formatDate ../from "MMM[&nbsp;]YYYY"}}}&mdash;{{{formatDate ../to "MMM[&nbsp;]YYYY"}}}
                     </p>
                     {{/from}}
 
                     {{#location}}
-                    <p class="location">{{_ .}}</p>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        {{_ .}}
+                    </p>
                     {{/location}}
                 </header>
             </li>
@@ -142,13 +145,16 @@
 
                     {{#from}}
                     <p class="date">
-                        {{{formatDate ../from "YYYY"}}} &mdash;
-                        {{{formatDate ../to "YYYY"}}}
+                        <i class="far fa-clock"></i>
+
+                        {{{formatDate ../from "YYYY"}}}&mdash;{{{formatDate ../to "YYYY"}}}
                     </p>
                     {{/from}}
 
                     {{#location}}
-                    <p class="location">{{_ .}}</p>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        {{_ .}}</p>
                     {{/location}}
                 </header>
             </li>
