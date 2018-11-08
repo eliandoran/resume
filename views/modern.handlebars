@@ -101,7 +101,10 @@
                     {{/company}}
 
                     {{#from}}
-                    <p class="date">{{../from}} &mdash; {{../to}}</p>
+                    <p class="date">
+                        {{{formatDate ../from "MMM[&nbsp;]YYYY"}}} &mdash;
+                        {{{formatDate ../to "MMM[&nbsp;]YYYY"}}}
+                    </p>
                     {{/from}}
 
                     {{#location}}
@@ -127,7 +130,10 @@
                     {{/institution}}
 
                     {{#from}}
-                    <p class="date">{{../from}} &mdash; {{../to}}</p>
+                    <p class="date">
+                        {{{formatDate ../from "YYYY"}}} &mdash;
+                        {{{formatDate ../to "YYYY"}}}
+                    </p>
                     {{/from}}
 
                     {{#location}}
@@ -146,7 +152,7 @@
             {{#accomplishments}}
             <li>
                 <header>
-                    <h3 class="title">{{_ title}}, {{_ location}} {{#date}}({{.}}){{/date}}</h3>
+                    <h3 class="title">{{_ title}}, {{_ location}} {{#date}}({{{formatDate . "MMM[&nbsp;]YYYY"}}}){{/date}}</h3>
                 </header>
 
                 <p class="description">{{_ description }}</p>

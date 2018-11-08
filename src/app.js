@@ -28,7 +28,8 @@ for (const language of languages) {
             styleName,
             helpers: {
                 "_": helpers.languageHelper(language),
-                "url": helpers.urlHelper
+                "url": helpers.urlHelper,
+                "formatDate": helpers.momentHelper(language)
             }
         });
     });    
