@@ -139,13 +139,15 @@ body > aside {
             flex-grow: 1;
 
             ul {
+                display: table;
+
                 li {
                     overflow: auto;
                     font-size: 0.9em;
                     display: table-row;
+                    position: relative;
 
                     &.header {
-                        display: block;
                         text-align: center;                        
                         font-size: 0.75em;
                         margin-top: 1em;
@@ -169,6 +171,7 @@ body > aside {
                     h3 {
                         padding: 0.75em 0;
                         text-transform: uppercase;
+                        transform: translateX(50%);
                     }
 
                     .value {
