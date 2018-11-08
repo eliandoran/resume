@@ -125,6 +125,15 @@
                     </p>
                     {{/location}}
                 </header>
+
+                <ul class="achievements">
+                    {{#achievements}}
+                    <li>
+                        <i class="far fa-star"></i>
+                        {{_ .}}
+                    </li>
+                    {{/achievements}}
+                </ul>
             </li>
             {{/workExperience}}
         </ul>

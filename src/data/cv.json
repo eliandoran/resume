@@ -34,7 +34,21 @@
                 "ro": "Programator ajutor"
             },
             "company": "Ausy Technologies Romania",
-            "location": "Sibiu, Romania"
+            "location": "Sibiu, Romania",
+            "achievements": [
+                {
+                    "en": "",
+                    "ro": "Oferirea de training tehnic specific și suport tehnic ulterior unei echipe de trei persoane."
+                },
+                {
+                    "en": "",
+                    "ro": "Dezvoltarea interfeței om-mașină pentru dispozitive embedded (smart watch, IoT) folosind Java."
+                },
+                {
+                    "en": "",
+                    "ro": "Training în Software Development & Analysis, Java, MySQL, Git."
+                }
+            ]
         }
     ],
 
@@ -110,7 +124,7 @@
             },
             "description": {
                 "en": "Three hours each of theoretical and practical examination of Network Administration (CCNA prep) and SysAdmin skills using simulators and virtual machines.",
-                "ro": "Examinarea teoretică și practică a aptitudinilor de administrator de rețea (pregătire CCNA) și administrator de sistem utilizând simulatoare și mașini virtuale."
+                "ro": "Examinarea teoretică și practică a aptitudinilor de administrator de rețea (pre‑CCNA) și administrator de sistem utilizând simulatoare și mașini virtuale."
             },
             "date": "2016-04",
             "location": "Bucharest"
@@ -123,7 +137,7 @@
             },
             "description": {
                 "en": "Participated with a photorealistic 2D video game. Created a custom game engine with 10.000 lines of C# and MonoGame/XNA.",
-                "ro": "Participarea cu un joc video 2D fotorealist. Motorul jocului a fost creat de la zero folosind doar MonoGame și C#, având 10.000 linii de cod."
+                "ro": "Participarea cu un joc video 2D fotorealist având motorul jocului creat de la zero."
             },
             "date": "2015-05",
             "location": "Lugoj"
