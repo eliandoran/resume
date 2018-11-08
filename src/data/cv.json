@@ -174,14 +174,21 @@
                 },                
                 {
                     "name": "Linux",
-                    "percentage": 70
+                    "percentage": 75
                 },
                 {
                     "name": {
                         "en": "Embedded Technologies",
                         "ro": "Tehnologii embedded"
                     },
-                    "percentage": 50
+                    "percentage": 70
+                },
+                {
+                    "name": {
+                        "en": "Databases",
+                        "ro": "Baze de date"
+                    },
+                    "percentage": 60
                 }
             ]
         },
@@ -195,7 +202,7 @@
                 {
                     "name": {
                         "en": "Teamwork",
-                        "ro": "Lucrul în echipă"
+                        "ro": "Lucru în echipă"
                     },
                     "percentage": 80
                 },
