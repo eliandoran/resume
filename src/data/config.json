@@ -12,11 +12,17 @@
                 "ro": "Română"
             }
         }
-    },
+    },    
 
-    "datePresent": {
-        "en": "present",
-        "ro": "prezent"
+    "ui": {
+        "datePresent": {
+            "en": "present",
+            "ro": "prezent"
+        },        
+        "educationHeader": {
+            "en": "{degree} in {field}",
+            "ro": "{degree} în {field}"
+        }
     },
 
     "sections": {

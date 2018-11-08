@@ -29,7 +29,8 @@ for (const language of languages) {
             helpers: {
                 "_": helpers.languageHelper(language),
                 "url": helpers.urlHelper,
-                "formatDate": helpers.momentHelper(language)
+                "formatDate": helpers.momentHelper(language),
+                "educationHeader": helpers.educationHeaderHelper(language)
             }
         });
     });    

@@ -1,4 +1,5 @@
 const moment = require("moment");
+const format = require("string-template");
 const config = require("./data/config.json");
 
 function languageHelper(language) {
@@ -18,7 +19,7 @@ function momentHelper(language) {
 
     return (date, format) => {
         if (date === "present")
-            return config.datePresent[language];  
+            return config.ui.datePresent[language];  
         
         let numSegments = date.split("-").length;
 
@@ -33,11 +34,19 @@ function momentHelper(language) {
     }
 }
 
+function educationHeaderHelper(language) {
+    return (degree, field) => 
+        format(config.ui.educationHeader[language], {
+            degree, field
+        });
+}
+
 function urlHelper(url) {
     return /(?<=:\/\/).+/.exec(url);
 }
 
 module.exports = {
+    educationHeaderHelper,
     languageHelper,
     momentHelper,
     urlHelper
