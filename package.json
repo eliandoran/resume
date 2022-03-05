@@ -12,7 +12,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-less": "^0.1.0",
-    "handlebars": "^4.5.3",
+    "handlebars": "^4.7.7",
     "moment": "^2.24.0",
     "string-template": "^1.0.0"
   }
